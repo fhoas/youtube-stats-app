@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Details</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="favicon"><img src="./logo.svg" alt="logo">Youtube Details</div>
+        <nav>
+            <ul>
+                <li id="nav-item"><a href="../index.html">Account Details</a></li>
+                <li id="nav-item" class="selected">Converter</li>
+                <li id="nav-item"><a href="./playlist.html">Playlist Details</a></li>
+            </ul>
+        </nav>
+        <div class="email">
+            <button>Mail Me</button>
+        </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="search-area">
+            <h1>Convert USERNAME -> ID:</h1>
+            <div class="input-area">
+                <input id="converter-input" class="data-input" type="text" placeholder="Paste Username Here!">
+                <button class="search-btn"><i class="fa-solid fa-repeat"></i></button>
+                <div class="result">Copy Your ID Here!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="error disable">
+       <p>Something Went Wrong</p>
+       <i class="fa-solid fa-circle-xmark fa-beat-fade" style="color: #c11010;"></i>
+    </div>
+
+    <footer>
+        <p>Made with ❤ by <a href="https://fhoas.dev">fhoas</a></p>
+    </footer>
+    <script src="./convert.js"></script>
+</body>
+
+</html>

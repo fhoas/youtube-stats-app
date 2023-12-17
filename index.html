@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Details</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="" type="">
+        <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="favicon"><img src="./assets/logo.svg" alt="logo">Youtube Details</div>
+        <nav>
+            <ul>
+                <li id="nav-item" class="selected">Account Details</li>
+                <li id="nav-item"><a href="./assets/playlist.html">Playlist Details</a></li>
+            </ul>
+        </nav>
+        <div class="email">
+            <button>Mail Me</button>
+        </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="search-area">
+            <h1>Find the details of any YouTube accounts:</h1>
+            <div class="input-area">
+                <input id="main-input" type="text" placeholder="Paste URL Here! (WORKS ONLY WITH IP URL!)">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <p id="converter"><a href="https://commentpicker.com/youtube-channel-id.php" target="_blank">if you don't have id you can get here!</a></p>
+        </div>
+    </div>
+
+
+    <div class="details disable">
+        <div class="profile-photo-and-name">
+            <img id="profile-photo" src="" alt="">
+            <span id="profile-name"></span>
+        </div>
+        <div class="channel-statistic">
+            <div class="subscriber">
+                <span id="stats-heading">Subscriber:</span>
+                <p id="number-of-subscriber"></p>
+            </div>
+            <div class="uploads">
+                <span id="stats-heading">Uploads:</span>
+                <p id="number-of-uploads"></p>
+            </div>
+            <div class="views">
+                <span id="stats-heading">Views:</span>
+                <p id="number-of-views"></p>
+            </div>
+            <div class="create">
+                <span id="stats-heading">Create Date:</span>
+                <p id="date-of-create"></p>
+            </div>
+            <div class="description">
+                <span id="stats-heading">Description:</span>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+    <div class="error disable">
+       <p>Something Went Wrong</p>
+       <i class="fa-solid fa-circle-xmark fa-beat-fade" style="color: #c11010;"></i>
+    </div>
+
+    <footer>
+        <p>Made with ❤ by <a href="https://fhoas.dev">fhoas</a></p>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
